@@ -1,0 +1,7 @@
+num=8
+for val in range(2,num//2+1):
+    if num%val==0:
+        print('composite')
+        break
+else:
+    print('not composite')
