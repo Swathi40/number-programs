@@ -1,0 +1,12 @@
+num=153
+copy=num
+res=0
+power=len(str(num))
+while num!=0:
+    rem=num%10
+    res=res+rem**power
+    num=num//10
+if copy==res:
+    print('armstrong')
+else:
+    print('not armstrong')
