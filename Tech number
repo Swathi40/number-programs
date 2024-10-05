@@ -1,0 +1,11 @@
+num=2025
+if len(str(num))%2==0:
+    mid = len(str(num)) // 2
+    fp=num//(10**mid)
+    sp=num%(10**mid) 
+    if num==(fp+sp)**2:
+        print('tech number')
+    else:
+        print('not tech number') 
+else:
+    print('not possible to check')   
