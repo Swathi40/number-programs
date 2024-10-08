@@ -1,0 +1,16 @@
+num=3
+dup=num
+rev=0
+for den in range(2,num//2+1):
+    if num%den==0:
+        print('not a prime')
+        break
+else:
+    while num!=0:
+        rem=num%10
+        rev=rev*10+rem
+        num=num//10
+    if dup==rev:
+        print('palyprime')
+    else:
+        print('not a palyprime')
