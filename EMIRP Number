@@ -1,0 +1,21 @@
+num = 13
+rev = 0
+dup = num
+while num != 0:
+    rem = num % 10
+    rev = rev * 10 + rem
+    num = num // 10
+if dup != rev:
+    for den in range(2, dup // 2 + 1):
+        if dup % den == 0:
+            print('Not prime')
+            break
+    else:
+        for den in range(2, rev // 2 + 1):
+            if rev % den == 0:
+                print('Not emirp')
+                break
+        else:
+            print('Emirp') 
+else:
+    print('Not an emirp')
